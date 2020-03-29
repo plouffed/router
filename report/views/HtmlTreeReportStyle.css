@@ -1,0 +1,80 @@
+.router {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0000000d;
+  height: 82%;
+}
+.router-header {
+  padding: 0.5em;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  margin: 0 0 0.5em;
+}
+
+.routes {
+  text-align: left;
+  overflow: auto;
+  padding-bottom: 1em;
+}
+
+.path {
+  color: #005ce6;
+}
+
+.controller {
+  font-size: 0.8em;
+  color: #555;
+  margin-left:1em;
+}
+
+.props {
+  font-size: 0.8em;
+  font-family: monospace;
+  padding: 0.5em
+}
+
+.prop-key {
+  color: #946600;
+}
+.prop-value {
+  color: #246f0b;
+}
+
+
+.toggle,
+.toggle .toggle{
+  padding: 0 0.5em;
+}
+
+.toggle > label {
+  cursor: pointer;
+}
+
+.toggle > input {
+  display: none;
+}
+.toggle > section {
+  margin-left: 1em;
+  opacity: 0;
+  font-size: 0;
+  transition: opacity 0.25s ease;
+  border-left: 1px solid #e6dd8f;
+}
+.toggle > input:checked ~ section {
+  opacity: 1;
+  font-size: inherit;
+}
+.toggle > label:before {
+  content:'\2BC8';
+  font-size: 0.65em;
+  margin-right: 0.2em;
+}
+
+.toggle > input:checked ~ label:before {
+  content:'\2BC6';
+}
+
+.is404 {
+  color: #474747;
+}

@@ -1,0 +1,10 @@
+.idea
+build
+node_modules
+docs
+*.iml
+/desktop.ini
+*.vsdx
+/logs
+/vendor
+/composer.lock

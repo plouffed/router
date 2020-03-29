@@ -8,3 +8,4 @@ docs
 /logs
 /vendor
 /composer.lock
+.phpunit.result.cache
